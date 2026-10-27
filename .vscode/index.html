@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>💰 Cloud-Based Expense Tracker</h1>
+            <p>Track your money and manage your expenses</p>
+        </header>
+
+        <!-- Summary Cards -->
+        <section class="summary">
+
+            <div class="card balance">
+                <h3>Total Balance</h3>
+                <h2>₹25,000</h2>
+            </div>
+
+            <div class="card income">
+                <h3>Total Income</h3>
+                <h2>₹30,000</h2>
+            </div>
+
+            <div class="card expense">
+                <h3>Total Expenses</h3>
+                <h2>₹5,000</h2>
+            </div>
+
+        </section>
+
+        <!-- Add Expense Form -->
+        <section class="form-section">
+
+            <h2>Add New Expense</h2>
+
+            <form id="expenseForm">
+
+                <input type="text" id="expenseName" placeholder="Expense Name" required>
+
+                <input type="number" id="expenseAmount" placeholder="Amount (₹)" min="0.01" step="0.01" required>
+
+                <select id="expenseCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Education">Education</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input type="date" id="expenseDate" required>
+
+                <button type="submit">Add Expense</button>
+
+            </form>
+
+        </section>
+
+        <!-- Recent Transactions -->
+        <section class="transactions">
+
+            <h2>Recent Transactions</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody id="expenseList">
+
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Food</td>
+                        <td>2026-10-25</td>
+                        <td class="negative">- ₹200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bus Ticket</td>
+                        <td>Travel</td>
+                        <td>2026-10-24</td>
+                        <td class="negative">- ₹100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Books</td>
+                        <td>Education</td>
+                        <td>2026-10-23</td>
+                        <td class="negative">- ₹500</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <footer>
+            <p>Cloud-Based Expense Tracker | Mini Project</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+```
